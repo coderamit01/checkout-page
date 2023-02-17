@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheckOut Page</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="checkout">
+    <h2 class="text-center pb-5">CheckOut Page</h2>
+    <div class="container">
+      <div class="row mb-5 g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-danger">Your Cart</span>
+            <span class="badge bg-danger rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between align lh-sm">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <span class="text-muted">Brief description</span>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align lh-sm">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <span class="text-muted">Brief description</span>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align lh-sm">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <span class="text-muted">Brief description</span>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align lh-sm">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>EXAMPLECODE</small>
+              </div>
+              <span class="text-success">-$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align lh-sm">
+                <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+          <form action="" class="card p-2">
+            <div class="input-group">
+              <input type="text" id="promo" class="form-control" placeholder="Promo code">
+              <button class="btn btn-dark">Redeem</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Billing address</h4>
+          <form action="">
+            <div class="row">
+              <div class="col-sm-6">
+                <label class="form-label" for="first">First Name</label>
+                <input class="form-control mb-3" type="text" name="firstname" id="first" placeholder="Fist name">
+              </div>
+              
+              <div class="col-sm-6">
+                <label class="form-label" for="last">Last Name</label>
+                <input class="form-control mb-3" type="text" name="lasttname" id="last" placeholder="Last name">
+              </div>
+  
+              <div class="col-12 pb-2">
+                <label class="form-label" for="username">Username</label>
+                  <input type="text" name="user" id="username" class="form-control" placeholder="Username">
+              </div>
+  
+              <div class="col-12 pb-2">
+                <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="example@gmail.com">
+              </div>
+  
+              <div class="co -12 pb-2">
+                <label class="form-label" for="addrs">Address</label>
+                <input type="text" name="address" id="addr" class="form-control" placeholder="Road **/ Home **">
+              </div>
+  
+              <div class="co -12 pb-2">
+                <label class="form-label" for="address">Address 2 <span class="text-muted">(Optional)</span></label>
+                <input type="text" name="address" id="address" class="form-control" placeholder="Apartment or Suit">
+              </div>
+  
+              <div class="col-md-5 pb-2">
+                <label for="country" class="form-label">Country</label>
+                <select name="select" id="country" class="form-select">
+                  <option value="">Chose...</option>
+                  <option value="">Bangladest</option>
+                  <option value="">Pakistan</option>
+                  <option value="">United State</option>
+                </select>
+              </div>
+  
+              <div class="col-md-4 pb-2">
+                <label for="state" class="form-label">State</label>
+                <select name="select" id="state" class="form-select">
+                  <option value="">Chose...</option>
+                  <option value="">Thakurgaon</option>
+                  <option value="">Rajshahi</option>
+                  <option value="">Dhaka</option>
+                </select>
+              </div>
+  
+              <div class="col-md-3 pb-2">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" name="zip" id="zip" class="form-control">
+              </div>
+            </div>
+              <hr class="my-4">
+              <div class="form-check">
+                <input type="checkbox" name="" id="" class="form-check-input">
+                <label for="check" class="form-check-label">Shipping address is the same as my billing address</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Save this information for next time</label>
+              </div>
+              <hr class="my-4">
+              <h4 class="mb-3">Payment</h4>
+              <div class="my-3">
+                <div class="form-check">
+                  <input type="radio" id="credit" class="form-check-input">
+                  <label for="credit" class="form-check-label">Credit Card</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" id="debit" class="form-check-input">
+                  <label for="debit" class="form-check-label">Debit Card</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" id="paypal" class="form-check-input">
+                  <label for="paypal" class="form-check-label">Paypal</label>
+                </div>
+              </div>
+              <div class="row pb-2">
+                <div class="col-md-6 pb-2">
+                  <label for="namecard" class="form-label">Name On Card</label>
+                  <input type="text" name="name-card" id="namecard" class="form-control">
+                  <small class="text-muted">Full name as displayed on card</small>
+                </div>
+                <div class="col-md-6 pb-2">
+                  <label for="cardnumber" class="form-label">Credit card number</label>
+                  <input type="text" name="card-number" id="cardnumber" class="form-control">
+                </div>
+                <div class="col-md-3">
+                  <label for="expiration" class="form-label">Expiration</label>
+                  <input type="text" name="expiration" id="expiration" class="form-control">
+                </div>
+                <div class="col-md-3">
+                  <label for="cvv" class="form-label">CVV</label>
+                  <input type="text" name="cvv" id="cvv" class="form-control">
+                </div>
+              </div>
+            <hr class="my-4">
+            <button type="button" class="btn btn-primary w-100 btn-lg">Continue to checkout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/fontawesome.min.js"></script>
+</body>
+</html>
